@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-size: 24px;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.container {
+	padding: 0 170px;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	margin-bottom: 10px;
+}
+.logo {
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	font-weight: bold;
+	font-size: 27px;
+}
+.logospan1 {
+	color: goldenrod;
+}
+.logospan2 {
+	color: black;
+}
+.wrap {
+	position: relative;
+}
+.btnlang {
+	border: none;
+	font-size: 24px;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+	background-color: goldenrod;
+	color: white;
+	padding: 8px 24px;
+}
+.langs {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 100%;
+}
+.lang {
+	cursor: pointer;
+	background-color: black;
+	color: goldenrod;
+	padding: 8px 24px;
+	border-bottom: 2px solid goldenrod;
+}
+.lang:last-child {
+	border-bottom: none;
+}
+.showmenu {
+	display: block;
+}
+.categories, .sections {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.category {
+	width: 31%;
+	aspect-ratio: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 40px;
+}
+.category1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0 100%), url(img/exterior.jpg);
+}
+.category2 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0 100%), url(img/house.jpg);
+}
+.category3 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0 100%), url(img/builders.jpg);
+}
+.category4 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0 100%), url(img/things.jpg);
+}
+.category5 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0 100%), url(img/texh.jpg);
+}
+.category6 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0 100%), url(img/repair.jpg);
+}
+.footer {
+	background-color: black;
+	color: goldenrod;
+	padding: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+.section {
+	width: 23%;
+	aspect-ratio: 1.5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 30px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0 100%), url(img/excavator.jpg);
+}
+@media(max-width:1400px){
+	.container {
+		padding: 0 70px;
+	}
+}
+@media(max-width:1100px){
+	.container {
+		padding: 0 40px;
+	}
+}
+@media(max-width:960px){
+	.category {
+		width: 48%;
+	}
+	.section {
+		width: 31%;
+	}
+	.section:nth-child(7), .section:nth-child(8) {
+		flex-grow: 1;
+	}
+	.section:nth-child(7) {
+		margin-right: 30px;
+	}
+}
+@media(max-width:670px){
+	.categories {
+		justify-content: center;
+	}
+	.category {
+		width: 80%;
+	}
+	.section {
+		width: 48%;
+	}
+	.section:nth-child(7), .section:nth-child(8) {
+		flex-grow: 0;
+	}
+	.section:nth-child(7) {
+		margin-right: 0;
+	}
+}
+@media(max-width:560px){
+	.nav {
+		padding: 12px 0;
+		margin-bottom: 0;
+	}
+	.container {
+		padding: 0 20px;
+	}
+	.category {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.section {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
